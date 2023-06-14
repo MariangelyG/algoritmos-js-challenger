@@ -1,0 +1,17 @@
+// Return nested object property
+// Write a function that takes an object as argument.
+// In some cases the object contains other objects with some deeply nested properties.
+// Return the property 'b' of object 'a' inside the original object if it exists. 
+// If not, return undefined
+
+function myFunction(obj){
+
+    
+    return obj && obj.a ? obj.a.b : undefined
+}
+
+    
+console.log(myFunction({a:1})); /**esperado undefined */ 
+console.log(myFunction({a:{b:{c:3}}})); /**esperado  {c:3}*/ 
+console.log(myFunction({b:{a:1}})); /**esperado undefined */ 
+console.log(myFunction({a:{b:2}})); /**esperado 2*/ 
