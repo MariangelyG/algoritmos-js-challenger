@@ -12,3 +12,6 @@ function greet(name){
     }
   }
   
+
+  console.log(greet("Jhonny"));
+  

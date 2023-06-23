@@ -4,3 +4,6 @@
 function shortcut (string) {
     return string.replace(/[aeiou]/gi, '');;
   }
+
+  console.log(shortcut("hola Maria, Como stas"));
+  
